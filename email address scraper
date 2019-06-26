@@ -1,6 +1,5 @@
 # Find a pattern in a text using a Regular Expression library (For basic version refer line 18):
 
-
 import re                                                                                  # Importing regular expressions library
 
 text = "random string. fazeelusmani18@gmail.com hello@yahoo.net some more random text."    # Assigning some random text
@@ -20,7 +19,7 @@ You can first try searching of a basic pattern in a text:
 
 import re
 
-text = "abcd eflkjlkjabcdpqersoitabcd"
+text = "abcd eflkjlkjabcdpqersoitabcd"                    # It seems the 'abcd' pattern is repeated 3 times 
 
 pattern = re.compile("abcd")
 
