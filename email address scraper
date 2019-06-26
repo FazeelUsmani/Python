@@ -1,4 +1,5 @@
-# Find a pattern in a text using a Regular Expression library
+# Find a pattern in a text using a Regular Expression library (For basic version refer line 18):
+
 
 import re                                                                                  # Importing regular expressions library
 
@@ -10,4 +11,21 @@ result = pattern.findall(text)                                                  
 print(result)
 
 res = pattern.search(text)                                                                 # Returns only the first available pattern 
+print(res)
+
+
+**********************************************************************************************
+You can first try searching of a basic pattern in a text:
+**********************************************************************************************
+
+import re
+
+text = "abcd eflkjlkjabcdpqersoitabcd"
+
+pattern = re.compile("abcd")
+
+result = pattern.findall(text)
+print(result)
+
+res = pattern.search(text)
 print(res)
