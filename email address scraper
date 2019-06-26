@@ -1,0 +1,13 @@
+# Find a pattern in a text using a Regular Expression library
+
+import re                                                                                  # Importing regular expressions library
+
+text = "random string. fazeelusmani18@gmail.com hello@yahoo.net some more random text."    # Assigning some random text
+
+pattern = re.compile("[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+")                               # Our email patterns looks like  <---
+
+result = pattern.findall(text)                                                             # Returns all the patterns in the form of a list
+print(result)
+
+res = pattern.search(text)                                                                 # Returns only the first available pattern 
+print(res)
