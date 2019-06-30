@@ -21,6 +21,9 @@ turtle.left(90)
 turtle.pendown()
 turtle.forward(120)
 
+turtle.pendup()
+turtle.goto(10,30)
+turtle.pendown()
 
 
 turtle.pencolor("green")
